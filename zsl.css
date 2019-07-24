@@ -308,8 +308,6 @@ a:hover {
           }
 .popup__wrapper__body__scroll {
         max-height: 450px;
-        overflow: scroll;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
       }
 .popup__wrapper__bottom {
       position: relative;
