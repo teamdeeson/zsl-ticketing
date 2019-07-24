@@ -668,7 +668,7 @@ rect {
         color: var(--ticketing-green);
       }
 .price-list__giraffe-icon {
-    background-image: url('/sites/all/themes/custom/zsl/assets/images/static/giraffe.png');
+    background-image: url('/sites/all/themes/custom/zsl/assets/images/static/giraffe.jpg');
     background-size: 60px 50px;
   }
 .price-list__peak {
