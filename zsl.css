@@ -315,11 +315,19 @@ a:hover {
       height: 20px;
       padding-right: 0;
     }
-@media (min-width: 700px) {
-.popup__wrapper__bottom {
-        padding-right: 120px
-    }
+.popup__wrapper__bottom__position-left {
+        padding-right: 220px;
       }
+@media (min-width: 700px) {
+.popup__wrapper__bottom__position-left {
+          padding-right: 260px
+      }
+        }
+@media (min-width: 700px) {
+.popup__wrapper__bottom__position-normal {
+          padding-right: 120px
+      }
+        }
 .popup__wrapper__bottom__shadow {
         position: absolute;
 
@@ -1241,9 +1249,6 @@ rect {
 .donation-message-section__body__content {
         margin-bottom: 14px
     }
-      }
-.donation-message-section__body__content__copy {
-        max-width: 596px;
       }
 .donation-message-section__body__content > div {
         display: inline;

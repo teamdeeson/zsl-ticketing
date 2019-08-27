@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="zsl.css" />
+    <script src="./zsl.js"></script>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="zsl.css" />
-  <script src="./zsl.js"></script>
-</head>
+  <body>
+    <div id="wrapper"></div>
 
-<body>
-  <div id="wrapper"></div>
-
-  <script>
-window.Drupal = {
-  settings: {
-    sro: {
-      //nodeSroUrl: 'https://dev-sro.zsl.org',
-      nodeSroUrl: 'https://sro.zsl.localhost',
-      showId: '8d95b290-9a38-4e60-89ae-f5c5b0d52665',
-      location: 'london_zoo',
-      headerLinkUrl: 'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/zsl-london-zoo',
-      footerLinks: [
-        {
-          linkUrl: 'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/about-us/contact-us',
-          linkText: 'Contact us',
+    <script>
+      window.Drupal = {
+        settings: {
+          sro: {
+            //nodeSroUrl: 'https://dev-sro.zsl.org',
+            nodeSroUrl: 'https://sro.zsl.localhost',
+            showId: '8d95b290-9a38-4e60-89ae-f5c5b0d52665',
+            location: 'london_zoo',
+            headerLinkUrl: 'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/zsl-london-zoo',
+            footerLinks: [
+              {
+                linkUrl: 'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/about-us/contact-us',
+                linkText: 'Contact us',
+              },
+              {
+                linkUrl: 'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/frequently-asked-questions',
+                linkText: 'Frequently asked questions',
+              },
+              {
+                linkUrl:
+                  'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/terms-and-conditions/shopping-terms-and-conditions',
+                linkText: 'Terms and conditions',
+              },
+            ],
+            introductionText: '',
+            membershipUrl: '#membership',
+            membershipUpgradeText: '',
+            charitableStatusText: '',
+            extrasUpsellText: '',
+            donationInfoUrl:
+              'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/support-us/donate-to-zsl',
+            flexiGuids: [
+              'ab614d76-f63d-4058-b690-7731ddbb3c74',
+              '0d308c41-ffdc-4a25-9a90-5b8e2a5344c3',
+              'd957ef30-078e-4b72-8719-c5c3a409f59b',
+            ],
+            faqUrl: '#faq',
+            ticketing_content: {
+              ticket_discount:
+                '<p>Our ticket prices vary by date. Online tickets are <u>always</u> <strong>cheaper</strong> than the gate. Your 10% online discount is included in the prices below. <a href="/frequently-asked-questions">Visit our tickets FAQ.</a></p>',
+              membership_upgrade:
+                '<p>Enjoy a whole year of incredible animals with unlimited <u>free entry</u> to our Zoos.</p>',
+              donation_message:
+                '<p>Your support really makes a difference. From your donation we <u>can claim</u> an additional 25p for every £1 you spend with us through Gift Aid, at no cost to you.<br><a href="http://www.google.com">Learn where your donations go</a></p>',
+              upsell_message: '<p>Add special<u> little extras</u> for the ultimate wild day out.</p>',
+            },
+          },
         },
-        {
-          linkUrl: 'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/frequently-asked-questions',
-          linkText: 'Frequently asked questions',
-        },
-        {
-          linkUrl:
-            'https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/terms-and-conditions/shopping-terms-and-conditions',
-          linkText: 'Terms and conditions',
-        },
-      ],
-      introductionText: '',
-      membershipUrl: '#membership',
-      membershipUpgradeText: '',
-      charitableStatusText: '',
-      extrasUpsellText: '',
-      donationInfoUrl: "https://www.ticketing-s62zg7q-kgq6iy5qmygty.eu-2.platformsh.site/support-us/donate-to-zsl",
-      flexiGuids: ["ab614d76-f63d-4058-b690-7731ddbb3c74", "0d308c41-ffdc-4a25-9a90-5b8e2a5344c3", "d957ef30-078e-4b72-8719-c5c3a409f59b"],
-      faqUrl: '#faq'
-    },
-  },
-};
+      };
 
-window.zslAppStart(window.Drupal.settings.sro);
-  </script>
-</body>
-
+      window.zslAppStart(window.Drupal.settings.sro);
+    </script>
+  </body>
 </html>
