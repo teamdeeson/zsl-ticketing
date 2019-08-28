@@ -762,6 +762,13 @@ rect {
             font-size: 21px
         }
           }
+.popup__wrapper__body__top__subtitle {
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0.1px;
+          color: #393939;
+          color: var(--ticketing-upsell-black);
+        }
 .popup__wrapper__body__top__close {
           border: 0;
           background-color: transparent;
@@ -778,6 +785,9 @@ rect {
 .popup__wrapper__body__scroll {
         max-height: 450px;
       }
+.popup__wrapper__body__scroll p {
+          font-size: 14px;
+        }
 .popup__wrapper__bottom {
       position: relative;
       width: 40px;
