@@ -1268,6 +1268,9 @@ rect {
           display: block
       }
         }
+.donation-message-section__body__giftaidit {
+      width: 120px;
+    }
 
 :root {
   --ticketing-upsell-grey: #e1e1e1;
