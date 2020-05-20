@@ -1043,6 +1043,91 @@ rect {
       margin: 20px 0;
     }
 
+.error-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.53333);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .error-modal__popup {
+    position: relative;
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 0 20px;
+    border: solid 2px #e1e1e1;
+    background-color: #ffffff;
+    padding: 15px;
+  }
+
+  @media (min-width: 700px) {
+
+  .error-modal__popup {
+      padding: 25px
+  }
+    }
+
+  .error-modal__popup h1 {
+      margin: 0;
+      font-size: 21px;
+      font-weight: bold;
+
+      margin: 0 0 14px 0;
+    }
+
+  .error-modal__popup p {
+      font-size: 14px;
+      margin: 0 0 14px 0;
+    }
+
+  .error-modal__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    border: 0;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17'%3E %3Cpath fill='%2353832F' fill-rule='evenodd' d='M8.485 5.9L13.556.827l2.829 2.829-5.071 5.07 5.07 5.072-2.828 2.828-5.07-5.07-4.83 4.828-2.828-2.829 4.829-4.828L.828 3.899l2.829-2.828L8.485 5.9z'/%3E %3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  @media (min-width: 700px) {
+
+  .error-modal__close {
+      right: 25px;
+      top: 25px
+  }
+    }
+
+  .error-modal__close:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17'%3E %3Cpath fill='%232C5234' fill-rule='evenodd' d='M8.485 5.9L13.556.827l2.829 2.829-5.071 5.07 5.07 5.072-2.828 2.828-5.07-5.07-4.83 4.828-2.828-2.829 4.829-4.828L.828 3.899l2.829-2.828L8.485 5.9z'/%3E %3C/svg%3E");
+    }
+
+  .error-modal__continue {
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: 0;
+    background-color: #53832f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
 :root {
   --ticketing-upsell-grey: #e1e1e1;
   --ticketing-grey: #e1e0e1;
