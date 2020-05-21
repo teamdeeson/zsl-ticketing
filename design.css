@@ -1016,7 +1016,7 @@ rect {
         font-size: 14px;
         line-height: 1.5;
         letter-spacing: 0.1px;
-        text-align: center;
+        text-align: left;
         color: #393939;
         color: var(--ticketing-upsell-black);
         max-width: 308px;
@@ -1025,7 +1025,8 @@ rect {
       }
 @media (min-width: 700px) {
 .date-screen__side-split__right__not-sure-when {
-          margin-bottom: 60px
+          margin-bottom: 60px;
+          max-width: 438px
       }
         }
 .date-screen__side-split__left {
