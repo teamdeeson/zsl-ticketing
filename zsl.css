@@ -2954,6 +2954,7 @@ rect {
 
   .login-screen h1 {
     margin: 0 20px 20px 20px;
+    font-size: 28px;
   }
 
   @media (min-width: 1000px) {
