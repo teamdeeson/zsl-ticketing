@@ -3005,12 +3005,15 @@ rect {
   }
 
   .login-screen h1 {
-    font-size: 21px;
-    font-weight: bold;
-    letter-spacing: 0.08px;
-    color: var(--ticketing-upsell-black);
     margin: 0 20px 20px 20px;
   }
+
+  @media (min-width: 1000px) {
+
+  .login-screen h1 {
+      margin: 10px 20px 20px 20px
+  }
+    }
 
   .login-screen h2 {
     font-size: 21px;
@@ -3028,6 +3031,13 @@ rect {
     margin: 0 20px 20px 20px;
     text-transform: uppercase;
   }
+
+  @media (min-width: 1000px) {
+
+  .login-screen h3 {
+      margin: 10px 20px 30px 20px
+  }
+    }
 
   .login-screen p {
     margin: 0 20px 10px 20px;
