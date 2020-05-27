@@ -3006,12 +3006,13 @@ rect {
 
   .login-screen h1 {
     margin: 0 20px 20px 20px;
-    font-size: 28px;
+    font-size: 21px;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 700px) {
 
   .login-screen h1 {
+      font-size: 28px;
       margin: 10px 20px 20px 20px
   }
     }
