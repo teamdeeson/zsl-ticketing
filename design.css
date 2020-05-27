@@ -3082,6 +3082,10 @@ rect {
     align-self: center;
   }
 
+  .login-screen button:disabled {
+      opacity: 0.2;
+    }
+
   .login-screen .error-message {
     color: red;
     border: 1px solid red;
