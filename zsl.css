@@ -3034,10 +3034,14 @@ rect {
       opacity: 0.2;
     }
 
-  .login-screen .error-message {
+  .login-screen__error-message {
     color: red;
     border: 1px solid red;
     padding: 10px;
+    margin: 0 20px 15px 20px;
+  }
+
+  .login-screen__reset {
     margin: 0 20px 15px 20px;
   }
 
