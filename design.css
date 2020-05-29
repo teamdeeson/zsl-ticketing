@@ -3097,6 +3097,10 @@ rect {
     margin: 0 20px 15px 20px;
   }
 
+  .login-screen__reset.disabled {
+      opacity: 0.2;
+    }
+
 :root {
   --ticketing-upsell-grey: #e1e1e1;
   --ticketing-grey: #e1e0e1;
