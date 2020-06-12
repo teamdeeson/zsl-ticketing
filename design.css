@@ -3101,6 +3101,18 @@ rect {
       opacity: 0.2;
     }
 
+  .login-screen__reset-note {
+    display: none;
+  }
+
+  .login-screen__reset-note--active {
+      display: block;
+    }
+
+  .login-screen__reset-note b {
+      font-size: 18px;
+    }
+
 :root {
   --ticketing-upsell-grey: #e1e1e1;
   --ticketing-grey: #e1e0e1;
