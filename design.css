@@ -1755,6 +1755,9 @@ rect {
         .ticket-table__donation--on .ticket-table__donation .ticket-table__donation-wrapper:after {
           border: none;
         }
+.tickets-screen__is_member .ticket-table__ticket-column.ticket-table__price {
+      display: none;
+    }
 
 :root {
   --ticketing-upsell-grey: #e1e1e1;
