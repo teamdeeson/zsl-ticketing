@@ -1071,7 +1071,7 @@ rect {
     padding: 15px;
   }
 
-  @media (--medium-viewport) {
+  @media (min-width: 700px) {
 
   .error-modal__popup {
       padding: 25px
@@ -1106,7 +1106,7 @@ rect {
     cursor: pointer;
   }
 
-  @media (--medium-viewport) {
+  @media (min-width: 700px) {
 
   .error-modal__close {
       right: 25px;
