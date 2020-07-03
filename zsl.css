@@ -1058,6 +1058,10 @@ rect {
   align-items: center;
 }
 
+  .error-modal__content {
+    z-index: 20;
+  }
+
   .error-modal__popup {
     position: relative;
     max-width: 470px;
@@ -1088,6 +1092,7 @@ rect {
 
   .error-modal__popup p {
       font-size: 14px;
+      line-height: 21px;
       margin: 0 0 14px 0;
     }
 
@@ -1122,12 +1127,13 @@ rect {
     align-self: flex-end;
     padding: 10px 20px;
     border: 0;
-    background-color: #53832f;
+    background-color: #0ab3d8;
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
   }
+
 
 :root {
   --ticketing-upsell-grey: #e1e1e1;
@@ -2375,6 +2381,80 @@ rect {
   position: relative;
 }
 
+.error-modal.donation {
+  text-align: left;
+}
+
+  .error-modal.donation .error-modal__popup {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 700px) {
+
+  .error-modal.donation .error-modal__popup {
+      max-width: 665px;
+      width: 100%
+  }
+    }
+
+  .error-modal.donation .error-modal__controls {
+    position: relative;
+    z-index: 5;
+  }
+
+  .error-modal.donation .error-modal__continue {
+    cursor: pointer;
+  }
+
+  .error-modal.donation .error-modal__footer {
+    height: 115px;
+    margin-right: -15px;
+    position: relative;
+  }
+
+  @media (min-width: 700px) {
+
+  .error-modal.donation .error-modal__footer {
+      height: 18px;
+      margin-right: -25px
+  }
+    }
+
+  .error-modal.donation .error-modal__footer div {
+      background-position: right bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+    }
+
+  .error-modal.donation .error-modal__footer div.error-modal__footer__leaf {
+        background-image: url('/sites/all/themes/custom/zsl/assets/images/static/modal-leaf.png');
+        height: 138px;
+        z-index: 1;
+      }
+
+  @media (min-width: 700px) {
+
+  .error-modal.donation .error-modal__footer div.error-modal__footer__leaf {
+          height: 200px
+      }
+        }
+
+  .error-modal.donation .error-modal__footer div.error-modal__footer__tiger {
+        background-image: url('/sites/all/themes/custom/zsl/assets/images/static/modal-tiger.png');
+        height: 94px;
+        z-index: 2;
+      }
+
+  @media (min-width: 700px) {
+
+  .error-modal.donation .error-modal__footer div.error-modal__footer__tiger {
+          height: 134px
+      }
+        }
 :root {
   --ticketing-upsell-grey: #e1e1e1;
   --ticketing-grey: #e1e0e1;
