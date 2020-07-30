@@ -971,6 +971,7 @@ rect {
           }
 .date-screen__side-split__right__date-wrapper__buttons__time-slot {
             flex-grow: 1;
+            margin-right: 3px;
 
             text-transform: uppercase;
             background-color: #53832f;
@@ -984,14 +985,14 @@ rect {
             border: 0;
             padding: 10px;
           }
-.date-screen__side-split__right__date-wrapper__buttons__time-slot:first-child {
-              margin-right: 3px;
-            }
 @media (min-width: 700px) {
-.date-screen__side-split__right__date-wrapper__buttons__time-slot:first-child {
-                margin-right: 5px
+.date-screen__side-split__right__date-wrapper__buttons__time-slot {
+              margin-right: 5px
+          }
             }
-              }
+.date-screen__side-split__right__date-wrapper__buttons__time-slot:last-child {
+              margin-right: 0;
+            }
 .date-screen__side-split__right__date-wrapper__buttons__time-slot:hover {
               background-color: #2c5234;
               background-color: var(--ticketing-dark-green);
