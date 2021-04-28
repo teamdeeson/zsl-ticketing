@@ -2072,7 +2072,8 @@ rect {
 @media (min-width: 700px) {
 .basket__promo {
       display: flex;
-      flex-wrap: nowrap
+      flex-wrap: nowrap;
+      flex-direction: column
   }
     }
 .basket__promo-label {
@@ -2106,6 +2107,28 @@ rect {
     display: flex;
     flex-wrap: nowrap;
   }
+.basket__promo-wrapper {
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: column;
+   }
+@media (min-width: 700px) {
+.basket__promo-wrapper {
+        flex-direction: unset
+   }
+      }
+.basket__promo-help {
+     font-size: 14px;
+     line-height: 1.5;
+     letter-spacing: 0.05px;
+     margin-top: 7px;
+     align-self: flex-end;
+  }
+@media (min-width: 700px) {
+.basket__promo-help {
+        max-width: 250px
+  }
+      }
 .basket__promo-btn {
     text-transform: uppercase;
     color: #ffffff;
