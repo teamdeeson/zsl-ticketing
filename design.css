@@ -1313,116 +1313,6 @@ rect {
     transform: rotate(360deg);
   }
 }
-.donation-message-section {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1000px) {
-.donation-message-section {
-    flex-direction: row
-}
-  }
-.donation-message-section__header {
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
-
-    margin-bottom: 20px;
-  }
-@media (min-width: 1000px) {
-.donation-message-section__header {
-      margin-bottom: 0px;
-      margin-right: 32px
-  }
-    }
-.donation-message-section__header > img {
-      width: 63px;
-      height: 51px;
-    }
-@media (min-width: 1000px) {
-.donation-message-section__header > img {
-        width: 181px;
-        height: 147px
-    }
-      }
-.donation-message-section__header__text {
-      margin-left: 8px;
-
-      font-size: 16px;
-      font-weight: bold;
-      letter-spacing: 0.06px;
-      color: #3b3b3b;
-      color: var(--ticketing-black);
-    }
-@media (min-width: 1000px) {
-.donation-message-section__header__text {
-        display: none
-    }
-      }
-.donation-message-section__body__title {
-      display: none;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 1.31;
-      letter-spacing: 0.06px;
-      color: #3b3b3b;
-      color: var(--ticketing-black);
-      margin-bottom: 10px;
-    }
-@media (min-width: 1000px) {
-.donation-message-section__body__title {
-        display: block
-    }
-      }
-.donation-message-section__body__content {
-      font-size: 14px;
-      line-height: 1.5;
-      letter-spacing: 0.05px;
-      color: #393939;
-      color: var(--ticketing-upsell-black);
-
-      margin-bottom: 12px;
-    }
-@media (min-width: 1000px) {
-.donation-message-section__body__content {
-        margin-bottom: 14px
-    }
-      }
-.donation-message-section__body__content > div {
-        display: inline;
-      }
-@media (min-width: 1000px) {
-.donation-message-section__body__content > div {
-          display: block
-      }
-        }
-.donation-message-section__body__giftaidit {
-      width: 120px;
-    }
-
-:root {
-  --ticketing-upsell-grey: #e1e1e1;
-  --ticketing-grey: #e1e0e1;
-  --ticketing-white: #ffffff;
-  --ticketing-dark-blue: #053463;
-  --ticketing-blue: #004f9f;
-  --ticketing-black: #3b3b3b;
-  --ticketing-dark-green: #2c5234;
-  --ticketing-green: #53832f;
-  --ticketing-light-grey: #f2f2f2;
-  --ticketing-upsell-black: #393939;
-  --ticketing-dark-grass-green: #417505;
-  --ticketing-pine: #2c5234;
-  --ticketing-greyish: #afafae;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .ticket-table__table {
     display: table;
     width: 100%;
@@ -1658,7 +1548,7 @@ rect {
   }
 .ticket-table__check-container {
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
   }
@@ -2151,6 +2041,24 @@ rect {
   .basket__paynow {
     text-align: center;
   }
+.basket__checkout-date {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column-reverse;
+   }
+@media (min-width: 700px) {
+.basket__checkout-date {
+      flex-flow: row
+   }
+    }
+.basket__checkout-date > div {
+      margin-bottom: 1rem;
+    }
+@media (min-width: 700px) {
+.basket__checkout-date > div {
+        margin-bottom: 0
+    }
+      }
 .basket__checkout-btn,
   .basket__paynow-btn {
     font-size: 16px;
@@ -2169,6 +2077,18 @@ rect {
 .basket__checkout-btn:hover, .basket__paynow-btn:hover {
       background-color: #2c5234;
       background-color: var(--ticketing-dark-green);
+    }
+.basket__checkout-btn-outlined {
+    border: 1px solid #53832f;
+    border: 1px solid var(--ticketing-green);
+    background: white;
+    color: #53832f;
+    color: var(--ticketing-green);
+  }
+.basket__checkout-btn-outlined:hover {
+      color: #2c5234;
+      color: var(--ticketing-dark-green);
+      background-color: white;
     }
 .basket__paynow-btn span {
       margin-left: 27px;
@@ -2486,6 +2406,117 @@ rect {
           height: 134px
       }
         }
+:root {
+  --ticketing-upsell-grey: #e1e1e1;
+  --ticketing-grey: #e1e0e1;
+  --ticketing-white: #ffffff;
+  --ticketing-dark-blue: #053463;
+  --ticketing-blue: #004f9f;
+  --ticketing-black: #3b3b3b;
+  --ticketing-dark-green: #2c5234;
+  --ticketing-green: #53832f;
+  --ticketing-light-grey: #f2f2f2;
+  --ticketing-upsell-black: #393939;
+  --ticketing-dark-grass-green: #417505;
+  --ticketing-pine: #2c5234;
+  --ticketing-greyish: #afafae;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.donation-message-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+@media (min-width: 1000px) {
+.donation-message-section {
+    flex-direction: row
+}
+  }
+.donation-message-section__header {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+@media (min-width: 1000px) {
+.donation-message-section__header {
+      margin-bottom: 0px;
+      margin-right: 32px
+  }
+    }
+.donation-message-section__header > img {
+      width: 63px;
+      height: 51px;
+    }
+@media (min-width: 1000px) {
+.donation-message-section__header > img {
+        width: 181px;
+        height: 147px
+    }
+      }
+.donation-message-section__header__text {
+      margin-left: 8px;
+
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.06px;
+      color: #3b3b3b;
+      color: var(--ticketing-black);
+    }
+@media (min-width: 1000px) {
+.donation-message-section__header__text {
+        display: none
+    }
+      }
+.donation-message-section__body__title {
+      display: none;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.31;
+      letter-spacing: 0.06px;
+      color: #3b3b3b;
+      color: var(--ticketing-black);
+      margin-bottom: 10px;
+    }
+@media (min-width: 1000px) {
+.donation-message-section__body__title {
+        display: block
+    }
+      }
+.donation-message-section__body__content {
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.05px;
+      color: #393939;
+      color: var(--ticketing-upsell-black);
+
+      margin-bottom: 12px;
+    }
+@media (min-width: 1000px) {
+.donation-message-section__body__content {
+        margin-bottom: 14px
+    }
+      }
+.donation-message-section__body__content > div {
+        display: inline;
+      }
+@media (min-width: 1000px) {
+.donation-message-section__body__content > div {
+          display: block
+      }
+        }
+.donation-message-section__body__giftaidit {
+      width: 120px;
+    }
+
 :root {
   --ticketing-upsell-grey: #e1e1e1;
   --ticketing-grey: #e1e0e1;
