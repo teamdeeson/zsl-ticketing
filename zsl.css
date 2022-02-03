@@ -1065,6 +1065,10 @@ rect {
     z-index: 20;
   }
 
+  .error-modal__close {
+    z-index: 21;
+  }
+
   .error-modal__popup {
     position: relative;
     max-width: 470px;
@@ -2446,6 +2450,12 @@ rect {
 
     margin-bottom: 20px;
   }
+/* IE11 fix */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+.donation-message-section__header {
+      min-width: 180px
+  }
+    }
 @media (min-width: 1000px) {
 .donation-message-section__header {
       margin-bottom: 0px;
@@ -2456,6 +2466,13 @@ rect {
       width: 63px;
       height: 51px;
     }
+/* IE11 fix */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+.donation-message-section__header > img {
+        max-width: 100%;
+        height: auto
+    }
+      }
 @media (min-width: 1000px) {
 .donation-message-section__header > img {
         width: 181px;
